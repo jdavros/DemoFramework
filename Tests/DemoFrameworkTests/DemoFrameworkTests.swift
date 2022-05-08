@@ -11,4 +11,9 @@ final class DemoFrameworkTests: XCTestCase {
         let color = DemoFramework.colorFromHexString("006736")
         XCTAssertEqual(color, DemoFramework.razeColor)
     }
+    
+    func test_secondaryRazeColors_areEqual() {
+        let color = DemoFramework.colorFromHexString("FCFFFD")
+        XCTAssertEqual(color, DemoFramework.secondaryRazeColor)
+    }
 }
